@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ориентир — концепт первого экрана</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.6"/><path d="M5 20c.9-3.6 3.6-5.6 7-5.6s6.1 2 7 5.6"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8.5" r="3.2"/><path d="M3 19.5c.7-3.1 3-4.9 6-4.9s5.3 1.8 6 4.9"/><circle cx="16.8" cy="9.3" r="2.6"/><path d="M16.4 14.7c2.4.2 4 1.7 4.6 4.3"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2.2"/><path d="M3.5 9.5h17M3.5 14.5h17M9.5 9.5v10"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M9 7.2v9.6l7.6-4.8z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2.4"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3.5H7.5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V8z"/><path d="M14 3.5V8h4.5M9 12.5h6M9 16h4"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6.5 16.5V11a5.5 5.5 0 0 1 11 0v5.5l1.5 1.8H5z"/><path d="M10 20.5a2.2 2.2 0 0 0 4 0"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-edit" viewBox="0 0 24 24"><path d="M4.5 19.5l1-4L15.8 5.2a2 2 0 0 1 2.9 0l.1.1a2 2 0 0 1 0 2.9L8.5 18.5z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 4.5l2.3 4.7 5.2.8-3.8 3.6.9 5.2-4.6-2.4-4.6 2.4.9-5.2-3.8-3.6 5.2-.8z"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4.5 19.5h15M7.5 16v-5M12 16V7.5M16.5 16v-3"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="15" r="3.5"/><path d="M10.5 12.5l8-8M15.5 7.5l2 2"/></symbol>
+</svg>
+
+<header class="hdr" id="top">
+  <div class="wrap hdr__in">
+    <a class="logo" href="#top" aria-label="Ориентир, к началу страницы">
+      <img class="logo__mark" src="assets/emblem-160.webp" alt="" width="129" height="160">
+      <img class="logo__word" src="assets/wordmark-72.webp" alt="Ориентир" width="508" height="72">
+    </a>
+    <nav class="nav" aria-label="Разделы страницы">
+      <a href="#audience">Для себя и команды</a>
+      <a href="#video">Видео</a>
+      <a href="#features">Возможности</a>
+      <a href="#pricing">Тарифы</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <a class="btn btn--line hdr__cta" href="#demo">Записаться на демо</a>
+    <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mnav">
+      <svg><use href="#i-menu"/></svg>
+    </button>
+  </div>
+  <nav class="mnav" id="mnav" aria-label="Мобильное меню" hidden>
+    <a href="#audience">Для себя и команды</a>
+    <a href="#video">Видео</a>
+    <a href="#features">Возможности</a>
+    <a href="#pricing">Тарифы</a>
+    <a href="#faq">Вопросы</a>
+    <a class="btn btn--primary" href="#demo">Записаться на демо</a>
+  </nav>
+</header>
+
+<main class="hero">
+  <div class="hero__bg" aria-hidden="true">
+    <img class="hero__watermark" src="assets/watermark.webp" alt="">
+  </div>
+
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <h1 class="h1 rv">Порядок в&nbsp;задачах, документах и&nbsp;расчётах&nbsp;— <span class="h1__accent">для себя и&nbsp;команды</span></h1>
+      <p class="lead rv">«Ориентир» — личный и&nbsp;командный бэк‑офис в&nbsp;Google&nbsp;Sheets. Ведите задачи, формируйте документы, смотрите отчёты и&nbsp;рассчитывайте оплату в&nbsp;одной системе.</p>
+      <div class="cta-row rv">
+        <a class="btn btn--primary btn--lg" href="#pricing">Выбрать тариф <svg><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--secondary btn--lg" href="#video"><span class="btn__play"><svg><use href="#i-play"/></svg></span>Посмотреть видео</a>
+      </div>
+      <a class="demo-link rv" href="#demo">Нужна демонстрация? <svg><use href="#i-arrow"/></svg></a>
+      <ul class="facts rv">
+        <li><span class="mark mark--solo"><svg><use href="#i-user"/></svg>Solo</span><span>для самостоятельной работы</span></li>
+        <li><span class="mark mark--team"><svg><use href="#i-users"/></svg>Team</span><span>для управления командой</span></li>
+        <li><span class="mark mark--env"><svg><use href="#i-grid"/></svg></span><span>Работает в&nbsp;Google&nbsp;Sheets</span></li>
+      </ul>
+    </div>
+
+    <div class="hero__visual rv">
+      <div class="seg" role="tablist" aria-label="Версия продукта">
+        <button class="seg__btn is-on" role="tab" aria-selected="true" data-v="solo"><svg><use href="#i-user"/></svg>Solo<small>для себя</small></button>
+        <button class="seg__btn" role="tab" aria-selected="false" data-v="team"><svg><use href="#i-users"/></svg>Team<small>для команды</small></button>
+        <span class="seg__thumb" aria-hidden="true"></span>
+      </div>
+
+      <div class="stage" data-v="solo">
+        <!-- TEAM -->
+        <article class="win win--team" aria-label="Экран Ориентир Team">
+          <div class="win__bar">
+            <img class="win__logo" src="assets/emblem-96.png" alt="">
+            <b>Ориентир</b>
+            <span class="tag tag--team"><svg><use href="#i-users"/></svg>Team</span>
+            <span class="win__title">Дашборд отдела</span>
+            <span class="period"><svg><use href="#i-cal"/></svg>Октябрь 2026<svg><use href="#i-chev"/></svg></span>
+          </div>
+          <div class="team">
+            <div class="team__sum">
+              <div><small>Исполнителей</small><b>4</b></div>
+              <div><small>Загрузка отдела</small><b>72%</b></div>
+              <div><small>Задач в&nbsp;работе</small><b>18</b></div>
+              <div><small>Бюджет периода</small><b>312&nbsp;400&nbsp;₽</b></div>
+            </div>
+            <div class="team__head"><span>Исполнитель</span><span>Загрузка</span><span>KPI</span><span>Документы</span></div>
+            <div class="team__row"><span class="ava">АК</span><span class="nm">Анна К.<small>дизайн</small></span><span class="load"><i style="--w:82%"></i><em>82%</em></span><span class="num">97%</span><span class="ok"><svg><use href="#i-check"/></svg>3 из 3</span></div>
+            <div class="team__row"><span class="ava">ИП</span><span class="nm">Игорь П.<small>разработка</small></span><span class="load"><i style="--w:95%" class="hot"></i><em>95%</em></span><span class="num">91%</span><span class="ok"><svg><use href="#i-check"/></svg>3 из 3</span></div>
+            <div class="team__row"><span class="ava">МЛ</span><span class="nm">Мария Л.<small>тексты</small></span><span class="load"><i style="--w:64%"></i><em>64%</em></span><span class="num">94%</span><span class="wait">2 из 3</span></div>
+            <div class="team__row"><span class="ava">ОР</span><span class="nm">Олег Р.<small>аналитика</small></span><span class="load"><i style="--w:48%"></i><em>48%</em></span><span class="num">88%</span><span class="ok"><svg><use href="#i-check"/></svg>3 из 3</span></div>
+          </div>
+          <div class="sheets" aria-hidden="true">
+            <span class="is-on">Дашборд отдела</span><span>Декомпозиция задач</span><span>Учёт работы и&nbsp;расчёт ЗП</span><span>Не&nbsp;ознакомились</span><span>Архив</span>
+          </div>
+        </article>
+
+        <!-- SOLO -->
+        <article class="win win--solo" aria-label="Экран Ориентир Solo">
+          <div class="win__bar">
+            <img class="win__logo" src="assets/emblem-96.png" alt="">
+            <b>Ориентир</b>
+            <span class="tag tag--solo"><svg><use href="#i-user"/></svg>Solo</span>
+            <span class="win__title">Дашборд эффективности</span>
+            <span class="period"><svg><use href="#i-cal"/></svg>Октябрь 2026<svg><use href="#i-chev"/></svg></span>
+          </div>
+          <div class="win__body">
+            <div class="dash">
+              <div class="kpi">
+                <svg class="ring" viewBox="0 0 80 80"><circle class="ring__bg" cx="40" cy="40" r="33"/><circle class="ring__fg" cx="40" cy="40" r="33" pathLength="100" style="--p:96"/></svg>
+                <div class="kpi__val">96<small>%</small></div>
+                <div class="kpi__txt"><b>Итоговый KPI</b><span>за рабочий период</span></div>
+              </div>
+              <div class="stats">
+                <div><small>Задач за&nbsp;период</small><b>24</b></div>
+                <div><small>Выполнено в&nbsp;срок</small><b>21</b></div>
+                <div><small>Просрочено</small><b>0</b></div>
+              </div>
+              <div class="chart">
+                <p class="chart__h">Часы за период</p>
+                <div class="bar"><span>Плановые</span><i style="--w:87.5%"></i><em>70 ч</em></div>
+                <div class="bar bar--fact"><span>Фактические</span><i style="--w:77.5%"></i><em>62 ч</em></div>
+              </div>
+              <div class="docs">
+                <span><svg><use href="#i-check"/></svg>Договор</span>
+                <span><svg><use href="#i-check"/></svg>Отчёт</span>
+                <span><svg><use href="#i-check"/></svg>Акт работ</span>
+              </div>
+            </div>
+            <!-- Меню справа, как боковая панель «Моё меню» в Google Sheets -->
+            <aside class="menu" aria-hidden="true">
+              <p class="menu__title">Моё меню</p>
+              <p class="menu__h">Задачи и проекты</p>
+              <span class="menu__i"><svg><use href="#i-plus"/></svg>Новая задача</span>
+              <span class="menu__i"><svg><use href="#i-edit"/></svg>Редактировать задачу</span>
+              <span class="menu__i"><svg><use href="#i-star"/></svg>Оценка задачи</span>
+              <p class="menu__h">Отчётность и акты</p>
+              <span class="menu__i is-on"><svg><use href="#i-doc"/></svg>Составить договор (НПД)</span>
+              <span class="menu__i"><svg><use href="#i-chart"/></svg>Составить отчёт</span>
+              <span class="menu__i"><svg><use href="#i-doc"/></svg>Составить акт работ</span>
+            </aside>
+          </div>
+          <div class="sheets" aria-hidden="true">
+            <span class="is-on">Дашборд</span><span>Учёт работы и&nbsp;расчёт ЗП</span><span>Выполненные задачи</span><span>Архив</span>
+          </div>
+        </article>
+
+        <div class="float float--a">
+          <span class="float__ic"><svg class="ic-solo"><use href="#i-doc"/></svg><svg class="ic-team"><use href="#i-key"/></svg></span>
+          <div><b data-solo="Договор оказания услуг" data-team="Доступ выдан">Договор оказания услуг</b>
+          <small data-solo="сформирован по шаблону" data-team="исполнитель добавлен в пространство">сформирован по шаблону</small></div>
+          <span class="float__ok"><svg><use href="#i-check"/></svg></span>
+        </div>
+        <div class="float float--b">
+          <span class="float__ic float__ic--bell"><svg><use href="#i-bell"/></svg></span>
+          <div><b>Напоминание в Telegram</b>
+          <small data-solo="Завтра дедлайн: «Отчёт за октябрь»" data-team="Игорь П.: загрузка выше 90%">Завтра дедлайн: «Отчёт за октябрь»</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<section class="problem">
+  <div class="wrap">
+    <h2 class="h2">Слишком много времени уходит на&nbsp;организацию работы?</h2>
+    <div class="problem__grid">
+      <div class="pcard">
+        <p class="pcard__h"><span class="mark mark--solo"><svg><use href="#i-user"/></svg>Solo</span>Для себя</p>
+        <ul>
+          <li>Задачи приходится собирать из&nbsp;заметок и&nbsp;переписки.</li>
+          <li>Документы создаются и&nbsp;заполняются вручную.</li>
+          <li>Отчёт по&nbsp;выполненной работе нужно составлять отдельно.</li>
+          <li>Расчёт оплаты требует проверки часов, результатов и&nbsp;условий.</li>
+        </ul>
+      </div>
+      <div class="pcard">
+        <p class="pcard__h"><span class="mark mark--team"><svg><use href="#i-users"/></svg>Team</span>Для команды</p>
+        <ul>
+          <li>Приходится отдельно запрашивать результаты у&nbsp;каждого исполнителя.</li>
+          <li>Сложно сопоставить загрузку и&nbsp;выполнение задач.</li>
+          <li>Документы команды находятся в&nbsp;разных местах.</li>
+          <li>Нет единого представления о&nbsp;финансировании отдела.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
